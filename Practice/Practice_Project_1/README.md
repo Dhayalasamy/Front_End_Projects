@@ -20,3 +20,4 @@ It consists of 3 segments such as add new Expense, Filter by year and Expense li
 ## Project Preview:-
 
 ![Alt text](image.png)
+![Alt text](image-1.png)
