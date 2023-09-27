@@ -3,11 +3,14 @@ import SectionTitle from "./UI/SectionTitle";
 
 function Experience() {
   return (
-    <section className="py-10 align-element bg-gray-100" id="experience">
+    <section
+      className="py-10 align-element bg-[url(https://wallpaperaccess.com/full/521099.jpg)] bg-cover bg-center"
+      id="experience"
+    >
       <SectionTitle text="Experience" />
-      <div className=" bg-[url(https://wallpaperaccess.com/full/521099.jpg)] rounded-lg bg-cover bg-center backdrop-opacity-75 ">
-        <div className=" py-6 shadow border  border-gray-200   mt-8 hover:shadow-xl duration-300 backdrop-brightness-50 ">
-          <div className="align-element grid md:grid-cols-2 items-center gap-10 text-white ">
+      <div className="  rounded-lg  bg-center  ">
+        <div className=" py-6 shadow border rounded-lg bg-brightness-50 bg-gray-100  mt-8 hover:shadow-xl duration-300  ">
+          <div className="align-element grid md:grid-cols-2 items-center gap-10 text-black ">
             <div>
               <h2 className="py-2">
                 Aug 2021 - Mar 2023{" "}
@@ -16,12 +19,20 @@ function Experience() {
               <p>
                 <b className=" text-emerald-400">Front-End Developer</b>
                 <br />
-                Worked in financial services at an investment bank, built
-                multiple dynamic & cross-browser compatible pages using Js
-                (React, Redux) Relocated a multi-page user experience into a
-                single page application to imporve client engagement. Worked
-                with RESTful APIs and Performed code analysis to elimate bug in
-                the webpages.
+                Worked in financial services at an investment bank, Built
+                mutiple dynamic and cross-browser compatible pages using reactJs
+                & used redux / redux toolkit for complex state management.
+                Utilised react hooks and created costum hooks to maintain
+                complex logics in one place and avoid code redundancy. Used
+                react-router package to handle routing and achieve single page
+                application. Worked with axios API and react query library to
+                simplify the process of fetching, managing of data and make
+                HTTPS requests. Developed sound knowledge on
+                stripe API and protocols for authorization. Styled creative and
+                eye-catching webpages using Tailwind / material css and css
+                modules. Familiar with both vite and webpack to build and
+                develop react application. and Performed code analysis to
+                elimate bug in the webpages.
               </p>{" "}
             </div>
             <div>
@@ -32,10 +43,16 @@ function Experience() {
               <p>
                 <b className=" text-emerald-400">Sql Developer</b>
                 <br />
-                Worked for a securities brokerage services company, created ETL
-                scripts to extract data from various sources like Oracle DBs ,
-                MSSQL Servers etc., Analyzed large datasets and performed
-                queries on them to get insights about customer behaviour.
+                Worked in a DataSOA environment of ETL project for security
+                brokerage services company. Created ETL scripts to extract data
+                from various sources in different formats and transformed it
+                then load into cliens dasboard. Worked with business analyics /
+                recon report to enable clients to monitor the business entities
+                day-to-day basis using XML to fetch data and automated the file
+                transfer process using AutoSys. Having hands full of knowledge
+                on DDL, DML scripts and worked with them to manage the database
+                up to date. Apart from above, created business logic workflows
+                and configured queues and schemas using Tibco business works.
               </p>
             </div>
           </div>
