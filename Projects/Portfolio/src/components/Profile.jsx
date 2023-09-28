@@ -20,8 +20,7 @@ function Profile() {
         <p className="text-emerald-500 mb-8 text-lg font-normal  lg:text-2xl sm:px-16 lg:px-48">
           Hey, there
         </p>
-
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
+        <h1 className="mb-4 text-4xl font-extrabold tracking-normal leading-normal text-white  md:text-5xl lg:text-6xl ">
           I'm Dhayalasamy Mani
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48">
