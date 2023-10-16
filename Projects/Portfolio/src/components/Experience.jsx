@@ -31,7 +31,7 @@ function Experience() {
                 stripe API and protocols for authorization. Styled creative and
                 eye-catching webpages using Tailwind / material css and css
                 modules. Familiar with both vite and webpack to build and
-                develop react application. and Performed code analysis to
+                develop react application and Performed code analysis to
                 elimate bug in the webpages.
               </p>{" "}
             </div>

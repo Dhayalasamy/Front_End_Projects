@@ -63,7 +63,7 @@ const About = () => {
                 high quality & user friendly websites.
               </dd>
               <dd className="mb-4  text-gray-100 sm:mb-5 italic ">
-                Feel free to contact me on social platforms
+                Feel free to contact me on social platforms.
               </dd>
             </dl>
           </div>
