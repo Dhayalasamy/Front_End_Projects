@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,63 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adding a global rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+/* Custom Animations */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromUp {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Animation Utilities */
+.animate-zoomIn {
+  animation: zoomIn 1s ease-in-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 1.5s ease-out;
+}
+
+.animate-slideFromUp {
+  animation: slideFromUp 1.5s ease-out;
+}
+
+
+

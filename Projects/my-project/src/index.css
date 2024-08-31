@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adding a global rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
