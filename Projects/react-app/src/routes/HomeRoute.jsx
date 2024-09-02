@@ -4,7 +4,6 @@ import HeroSection from "../components/HeroSection";
 import Slider from "../components/Slider";
 
 
-
 function HomeRoute() {
   return (
     <div className="flex flex-col md:flex-row">
