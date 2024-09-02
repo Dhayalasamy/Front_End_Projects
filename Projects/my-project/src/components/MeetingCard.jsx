@@ -22,7 +22,7 @@ function MeetingCard({ onClick, invite, count }) {
           Interviewer: {invite[0].user_det.handled_by.firstName}{" "}
           {invite[0].user_det.handled_by.lastName}
         </p>
-        <p>Time: 10-11 A.M</p>
+        <p>Time: 10 - 11 A.M</p>
       </div>
       {count > 0 && (
         <div className="z-10 absolute -top-2 -right-3 w-6 h-6 bg-yellow-500 text-black text-sm font-medium flex items-center justify-center rounded-full">

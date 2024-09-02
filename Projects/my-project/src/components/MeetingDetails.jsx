@@ -40,7 +40,7 @@ function MeetingDetails({ invite }) {
                 </tr>
                 <tr>
                   <td className="h-6 p-2 font-medium text-xs md:text-lg">
-                    Interview Time: 10-11 A.M
+                    Interview Time: 10 - 11 A.M
                   </td>
                 </tr>
                 <tr>
