@@ -1,9 +1,9 @@
-function LeftArrow() {
+function LeftArrow({onClick,disabled}) {
   return (
     <>
-      <button className="text-slate-100 border-2 border-sky-600 md:px-2 px-1 py-1 rounded mr-1 hover:bg-white">
+      <button onClick={onClick} disabled={disabled} className="border-2 border-sky-600 md:px-2 px-1 py-1 rounded mr-1 bg-white hover:bg-slate-300">
         <svg
-          fill="#808080"
+          fill="##000000"
           width="20"
           height="20"
           version="1.1"

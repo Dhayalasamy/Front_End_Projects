@@ -1,6 +1,6 @@
 import React from "react";
 
-function MeetingCard({ onClick, invite, count }) {
+function MeetingCard({ onClick, summary, firstName, lastName ,startTime, endTime,eventCount=1 }) {
   function capitalizeWords(str) {
     return str
       .split(" ")
@@ -17,18 +17,22 @@ function MeetingCard({ onClick, invite, count }) {
     >
       <div className="bg-sky-600 w-[10%] h-full rounded-tl-lg rounded-bl-lg"></div>
       <div className="bg-white w-[90%] h-full hover:bg-sky-600 hover:text-white p-2 text-sm rounded-br-lg rounded-tr-lg">
-        <h3>{capitalizeWords(invite[0].job_id.jobRequest_Title)}</h3>
+        <h3>{capitalizeWords(summary)}</h3>
         <p>
-          Interviewer: {invite[0].user_det.handled_by.firstName}{" "}
-          {invite[0].user_det.handled_by.lastName}
+          Interviewer: {firstName}{" "}
+          {lastName}
         </p>
-        <p>Time: 10 - 11 A.M</p>
+        <p>{startTime} - {endTime}</p>
       </div>
-      {count > 0 && (
-        <div className="z-10 absolute -top-2 -right-3 w-6 h-6 bg-yellow-500 text-black text-sm font-medium flex items-center justify-center rounded-full">
-          {count}
+      {eventCount>1 &&
+      <div className="z-20 absolute -top-2 -right-0.5  w-6 h-6 bg-yellow-500 text-black 
+        text-sm font-medium flex items-center justify-center rounded-full">
+         {eventCount}
         </div>
-      )}
+   
+      }
+        
+        
     </div>
   );
 }

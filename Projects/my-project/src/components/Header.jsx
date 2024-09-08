@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Header() {
+function Header({ onYearChange, onMonthChange }) {
   const months = [
     "January",
     "February",
@@ -26,10 +26,13 @@ function Header() {
 
   const handleChangeMonth = (e) => {
     setDefaultMonth(e.target.value);
+    onMonthChange(e.target.value)
   };
 
   const handleChangeYear = (e) => {
-    setDefaultYear(e.target.value);
+    const selectedYear = parseInt(e.target.value, 10); 
+    setDefaultYear(selectedYear);
+    onYearChange(selectedYear); 
   };
 
   return (
